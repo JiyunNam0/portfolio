@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <title>남지윤 포트폴리오</title>
+    <script>
+        $(function(){
+            $('.nav> li').click(function(e){
+                e.preventDefault();
+                
+                var tg = $(this);
+                var i = tg.index();
+                
+                var section = $('#wrap > div').eq(i);
+                var tt = section.offset().top;
+                
+                $('html, body').stop().animate({scrollTop:tt});
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <div class="header">
+                <div class="header_inner">
+                    <h1>NAM JI YUN Web Portfolio</h1>
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Skill</a></li>
+                        <li><a href="#">project</a></li>
+                        <li><a href="#">Contect</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="main_title">
+                <p>새로운 것에 <strong>도전</strong>하고 매일 <strong>성장</strong>하는</p>
+                <h2>
+                    PORTFOLIO
+                </h2>
+                <p>웹 퍼블리셔 <span>남지윤</span> 입니다.</p>   
+            </div>
+            <div class="moving_circle one"></div>
+            <div class="moving_circle two"></div>
+            <div class="moving_txt">
+                <p>Web Publisher & Web Developer</p>
+                <p>Web Publisher & Web Developer</p>
+                <p>Web Publisher & Web Developer</p>
+            </div>
+            <div class="scroll_down">
+                <p class="outline"></p>
+                <p class="wheel"></p>
+            </div>
+        </div>
+        <!-- 소개 -->
+        <div id="profile">
+            <div class="profile_inner">
+                <div class="profile_img">
+                    <img src="./images/profile.jpg" alt="프로필사진"/>
+                </div>
+                <div class="info_all">
+                    <div class="profile_info">
+                        <h3>PROFILE</h3>
+                        <ul>
+                            <li>
+                                <p>NAME</p>
+                                <p>남지윤</p>
+                            </li>
+                            <li>
+                                <p>BIRTH</p>
+                                <p>1997.11.03</p>
+                            </li>
+                            <li>
+                                <p>PHONE</p>
+                                <p>010.2561.2083</p>
+                            </li>
+                            <li>
+                                <p>EMAIL</p>
+                                <p>skawldbs2083@naver.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education_info">
+                        <h3>EDUCATION</h3>
+                        <ul>
+                            <li>
+                                <p>2023</p>
+                                <p>코리아 아카데미 프론트엔드 & 백엔드 과정 수료</p>
+                            </li>
+                            <li>
+                                <p>2021</p>
+                                <p>UI/UX 반응형 웹디자인 & 웹퍼블리셔 양성과정 수료</p>
+                            </li>
+                            <li>
+                                <p>2018</p>
+                                <p>계명문화대학교 호텔경영학과 졸업</p>
+                            </li>
+                            <li>
+                                <p>2016</p>
+                                <p>울산현대고등학교 졸업</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experience_all">
+                        <div class="certificate_info">
+                            <h3>CERTIFICATE</h3>
+                            <ul>
+                                <li>
+                                    <p>2023</p>
+                                    <p>정보처리기사 필기 합격</p>
+                                </li>
+                                <li>
+                                    <p>2021</p>
+                                    <p>GTQ 포토샵 1급 </p>
+                                </li>
+                                <li>
+                                    <p>2021</p>
+                                    <p>HSK 4급</p>
+                                </li>
+                                <li>
+                                    <p>2016</p>
+                                    <p>운전면허증 2종 보통</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience_info">
+                            <h3>EXPERIENCE</h3>
+                            <ul>
+                                <li>
+                                    <p>2021 ~ 2023</p>
+                                    <p>광고대행사 웹디자인 근무</p>
+                                </li>
+                                <li>
+                                    <p>2018 ~ 2020</p>
+                                    <p>현대백화점 뷰티매장 근무</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 스킬 -->
+        <div id="skill">  
+            <div class="skill_inner">
+                <h3>SKILLS</h3>
+                <div class="skill_all">
+                    <div class="skill_left">
+                        <ul>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/photoshop_icon.png" alt="포토샵 아이콘"/>
+                                </p>
+                                <p>간단한 사진 보정, 상세페이지, SNS카드뉴스, 이벤트 배너 등</br>
+                                    다양한 실무 디자인 제작 가능</p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/xd_icon.png" alt="어도비xd 아이콘"/>
+                                </p>
+                                <p>와이어프레임 , 아이디어 기획 구조 제작 가능 </p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/figma_icon.png" alt="피그마 아이콘"/>
+                                </p>
+                                <p>피그마를 활용한 와이어프레임, 프로토타입, 아이디어 기획 구조 등을</br>
+                                    활용하여 웹디자인을 기획 및 제작 가능</p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/github_icon.png" alt="깃허브 아이콘"/>
+                                </p>
+                                <p>간단한 git 명령어 사용 및 사이트 배포, 프로젝트 관리 가능</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill_right">
+                        <ul>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/html_icon.png" alt="포토샵 아이콘"/>
+                                </p>
+                                <p>HTML5 웹 접근성에 올바르며 모든 사람들이 웹접근에</br>
+                                    용이하게 HTML 구조 설계 가능</p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/css_icon.png" alt="포토샵 아이콘"/>
+                                </p>
+                                <p>CSS3 다양한 최신 트렌드 디자인과 애니메이션 구성 가능</p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/javascript_icon.png" alt="포토샵 아이콘"/>
+                                </p>
+                                <p>슬라이드 메뉴, 드롭다운 메뉴 , 팝업창, 모달창 등 다양한 동적인 기능 구현 가능</br>
+                                    (jQuery 사용으로 코드 간결화 가능)</p>
+                            </li>
+                            <li>
+                                <p class="icon_img">
+                                    <img src="./images/react_icon.png" alt="포토샵 아이콘"/>
+                                </p>
+                                <p>React 컴포넌트 재사용이 가능하도록 모듈화 가능</br>
+                                    npm 라이브러리 사용 및 Redux 상태관리 가능</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 프로젝트1 -->
+        <div id="project">
+            <div class="project_inner">
+                <h3>WEB <strong>PROJECT</strong></h3>
+                <div class="project_first">
+                    <div class="project_img">
+                        <img src="./images/aesop_mockup.png" alt="이솝홈페이지 목업이미지" />
+                    </div>
+                    <div class="project_info">
+                        <h5>이솝</h5>
+                        <p>프랑스 기업 로레알이 소유한 호주 고급 스킨케어 브랜드 입니다.</p>
+                        <ul>
+                            <li>
+                                <p>제작기간</p>
+                                <p>14일</p>
+                            </li>
+                            <li>
+                                <p>참여도</p>
+                                <p>개인 100%(디자인 퍼블리싱)</p>
+                            </li>
+                            <li>
+                                <p>사용툴</p>
+                                <p>photoshop, React, html, CSS, JavaScript, npm, Redux </p>
+                            </li>
+                            <li>
+                                <p>제작페이지</p>
+                                <p>Main, Sub페이지, 제품상세페이지, 카트페이지, 모달</p>
+                            </li>
+                        </ul>
+                        <div class="site_link">
+                            <a href="https://www.figma.com/proto/LOvMMcYFviX4GpLVMeU4C3/%EC%9D%B4%EC%86%9D-%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=2-256&viewport=332%2C1733%2C0.2&t=S4G2nmCG0ADLPvu2-1&scaling=min-zoom&mode=design" target="blank">기획서</a>
+                            <a href="https://www.figma.com/file/VqTHpsf6dk2rq8v3hzmvpb/%EC%9D%B4%EC%86%9D-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&node-id=0%3A1&mode=design&t=VrDCNmgTaXLWOxTx-1" target="blank">와이어프레임</a>
+                            <a href="https://JiyunNam0.github.io" target="blank">완성페이지</a>   
+                        </div>
+                    </div>    
+                </div>
+                <div class="project_first">
+                    <div class="project_img">
+                        <img src="./images/selecto_mockup.png" alt="셀렉토홈페이지 목업이미지" />
+                    </div>
+                    <div class="project_info">
+                        <h5>셀렉토</h5>
+                        <p>셀렉토는 스페인어로 '엄선된'이라는 뜻입니다. 이 의미에 따라, 셀렉토는 </br>엄선된 원두를 사용하여 고객에게 특별한 맛과 향을 선사하는 커피 전문점입니다.</p>
+                        <ul>
+                            <li>
+                                <p>제작기간</p>
+                                <p>5일</p>
+                            </li>
+                            <li>
+                                <p>참여도</p>
+                                <p>개인 100%(디자인 퍼블리싱)</p>
+                            </li>
+                            <li>
+                                <p>사용툴</p>
+                                <p>photoshop, HTML5, CSS3, JavaScript, jQuery</p>
+                            </li>
+                            <li>
+                                <p>제작페이지</p>
+                                <p>Main</p>
+                            </li>
+                        </ul>
+                        <div class="site_link">
+                            <a href="https://www.figma.com/proto/YMPSluhVTDW5lhYXuhUyLr/%EC%85%80%EB%A0%89%ED%86%A0-%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=1-2&viewport=478%2C84%2C0.17&t=yey00DpJkFpGr9wW-1&scaling=min-zoom&mode=design" target="blank">기획서</a>
+                            <a href="https://www.figma.com/file/EloT0L0q7m8vpqNpZ5WUHX/%EC%85%80%EB%A0%89%ED%86%A0?type=design&node-id=0%3A1&mode=design&t=Rx6O1ijSBhMsurAG-1" target="blank">와이어프레임</a>
+                            <a href="https://jiyunnam0.github.io/seleto/" target="blank">완성페이지</a>   
+                        </div>
+                    </div>    
+                </div>
+                <div class="project_first">
+                    <div class="project_img">
+                        <img src="./images/hifil_mockup.png" alt="하이필 홈페이지 목업이미지" />
+                    </div>
+                    <div class="project_info">
+                        <h5>하이필</h5>
+                        <p>하이필은 환경제일주의를 바탕으로 정수기,연수기, 공기정화기 등</br>
+                            환경관련제품을 제조하는 회사입니다.</p>
+                        <ul>
+                            <li>
+                                <p>제작기간</p>
+                                <p>5일</p>
+                            </li>
+                            <li>
+                                <p>참여도</p>
+                                <p>개인 100%(디자인 퍼블리싱)</p>
+                            </li>
+                            <li>
+                                <p>사용툴</p>
+                                <p>photoshop, HTML5, CSS3, JavaScript, jQuery</p>
+                            </li>
+                            <li>
+                                <p>제작페이지</p>
+                                <p>Main</p>
+                            </li>
+                        </ul>
+                        <div class="site_link">
+                            <a href="https://www.figma.com/proto/rOqn1DyO0ObaWfW7HQbezY/%ED%95%98%EC%9D%B4%ED%95%84-%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=0%3A1&type=design&node-id=1-2&viewport=724%2C-796%2C0.23&t=N2Z3I7LBprLdOzRM-1&scaling=min-zoom&mode=design" target="blank">기획서</a>
+                            <a href="https://www.figma.com/file/0LkQ68g6roY8P6DEfp1bCb/%ED%95%98%EC%9D%B4%ED%95%84?type=design&node-id=0%3A1&mode=design&t=CCoWHfF5U8RddJqP-1" target="blank">와이어프레임</a>
+                            <a href="https://JiyunNam0.github.io/hifil/" target="blank">완성페이지</a>   
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <!-- 상세페이지 -->
+        <div class="detail_page">
+            <div class="detail_inner">
+                <h3>Detail Page</h3>
+                <div class="detail_area">
+                    <a href="#">
+                        <img src="./images/detail_page_1.png" alt="모과포도즙 상세페이지">
+                    </a>
+                    <a href="#">
+                        <img src="./images/detail_page_2.png" alt="코코젤리 고양이모래 상세페이지">
+                    </a>
+                    <a href="#">
+                        <img src="./images/detail_page_3.png" alt="피그먼트 상세페이지">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal_popup">
+            <a href="#" class="close_btn">
+                <img src="./images/close_btn.png" alt="닫기 아이콘">
+            </a>
+            <div class="modal_inner">
+                <img src="./images/detail_page_1.png" alt="상세페이지1">
+            </div>
+        </div>
+        <!-- 마무리 -->
+        <div id="contect">
+            <div class="contect_inner">
+                <div class="contect_box">
+                    <h3>CONTECT</h3>
+                    <form id="form">
+                        <div class="field">
+                            <input type="text" name="from_name" id="from_name" placeholder="Title">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="message" id="message"  placeholder="Send Message">
+                        </div>
+                        <input type="submit" id="button" value="SUBMIT">
+                        <div class="empty_box"></div>
+                    </form>
+                </div>
+                <div class="e_contect_box"></div>
+                
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script type="text/javascript">
+                    emailjs.init('_GRHOn9MzTvtL22Xh')
+
+                    const btn = document.getElementById('button');
+
+                    document.getElementById('form')
+                    .addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+                        btn.value = 'Sending...';
+
+                        const serviceID = 'service_uvd2yjh';
+                        const templateID = 'template_vmngjdg';
+
+                        emailjs.sendForm(serviceID, templateID, this)
+                            .then(() => {
+                                btn.value = 'Send Email';
+                                alert('메일보내기 성공');
+                            }, (err) => {
+                                btn.value = 'Send Email';
+                                alert(JSON.stringify(err));
+                            });
+                    });
+                </script>
+            </div>
+            <div class="footer">
+                <h2>지금까지 항상 도전하는 웹퍼블리셔, 남지윤이었습니다.</br>
+                끝까지 봐주셔서 감사합니다!</h2>
+                <p>Copyright ©2024 by NAM JI YUN All right reserved</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
